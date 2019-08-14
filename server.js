@@ -5,7 +5,7 @@ require("dotenv").config();
 const server = express();
 const PORT = 8000;
 
-// const routes = require("./routes");
+const routes = require("./routes");
 const databaseUri = process.env.ATLAS_URI;
 
 mongoose.connect(databaseUri, { useNewUrlParser: true }, err => {
