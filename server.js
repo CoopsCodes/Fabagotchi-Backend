@@ -8,7 +8,7 @@ const PORT = 8000;
 
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
-server.user(cors());
+server.use(cors());
 
 const routes = require("./routes");
 server.use(routes);
